@@ -3,7 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renny's Pickles</title>
+    <title>Maui Pineapples</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-container">
+      <div class="left-side">
+        <div class="logo-container">Maui Pineapple Company</div>
+      </div>
+      <div class="right-side">
+        <div class="cta">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
+            magnam, vitae aut itaque culpa cupiditate, incidunt debitis
+            reiciendis placeat facilis labore a. Provident incidunt facilis aut
+            et amet placeat ipsam.
+          </p>
+        </div>
+        <div class="form">
+          <h2>Hop on the Pineapple Express!</h2>
+          <form
+            action="http://127.0.0.1:5500/top/sign-up/index.html"
+            method="post"
+          >
+            <div class="names">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required />
+
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" required />
+              <br />
+
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" required />
+
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="number"
+                name="phone-number"
+                id="phone-number"
+                required
+              />
+              <br />
+
+              <label for="password-1"> Password</label>
+              <input
+                type="password"
+                name="password-1"
+                id="password-1"
+                required
+              />
+
+              <label for="password-confirm">Confirm Password</label>
+              <input
+                type="password"
+                name="password-confirm"
+                id="password-confirm"
+                required
+              />
+            </div>
+            <footer>
+              <input type="submit" value="Create Account" />
+              <p>
+                Already have an account?
+                <a class="login-link" href="https://www.google.com/">Log In</a>
+              </p>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

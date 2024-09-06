@@ -46,3 +46,19 @@ h6 {
   --system-ui: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+
+.main-container {
+  display: flex;
+
+  justify-content: space-between;
+  background-color: white;
+}
+
+.left-side {
+  width: 40%;
+  background-image: url(pineapple.jpg);
+}
+
+.right-side {
+  width: 60%;
+}
