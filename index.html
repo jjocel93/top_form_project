@@ -26,41 +26,71 @@
             action="http://127.0.0.1:5500/top/sign-up/index.html"
             method="post"
           >
-            <div class="names">
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" required />
+            <div class="inputs">
+              <div class="first-name">
+                <label for="first-name">First Name</label> <br />
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Spongebob"
+                  required
+                />
+              </div>
 
-              <label for="last-name">Last name</label>
-              <input type="text" name="last-name" id="last-name" required />
-              <br />
+              <div class="last-name">
+                <label for="last-name">Last name</label> <br />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Squarepants"
+                  required
+                />
+              </div>
 
-              <label for="email">Email Address</label>
-              <input type="email" name="email" id="email" required />
+              <div class="email">
+                <label for="email">Email Address</label> <br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="SbobSqpants@gmail.com"
+                  required
+                />
+              </div>
 
-              <label for="phone-number">Phone Number</label>
-              <input
-                type="number"
-                name="phone-number"
-                id="phone-number"
-                required
-              />
-              <br />
+              <div class="phone-number">
+                <label for="phone-number">Phone Number</label> <br />
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="999-999-9999"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
 
-              <label for="password-1"> Password</label>
-              <input
-                type="password"
-                name="password-1"
-                id="password-1"
-                required
-              />
+              <div class="password-1">
+                <label for="password-1"> Password</label> <br />
+                <input
+                  type="password"
+                  name="password-1"
+                  id="password-1"
+                  required
+                />
+              </div>
 
-              <label for="password-confirm">Confirm Password</label>
-              <input
-                type="password"
-                name="password-confirm"
-                id="password-confirm"
-                required
-              />
+              <div class="password-confirm">
+                <label for="password-confirm">Confirm Password</label> <br />
+                <input
+                  type="password"
+                  name="password-confirm"
+                  id="password-confirm"
+                  required
+                />
+              </div>
             </div>
             <footer>
               <input type="submit" value="Create Account" />
