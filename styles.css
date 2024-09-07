@@ -14,6 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   background-color: #42532a;
+  font-family: var(--system-ui);
 }
 
 img,
@@ -53,6 +54,16 @@ h6 {
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+@media (max-width: 887px) {
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+}
+
 .logo-container {
   background-color: rgba(226, 228, 227, 0.816);
   opacity: 0.85;
@@ -85,7 +96,7 @@ h6 {
   width: 65%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Ensures it fills the available height */
+  flex-grow: 1;
 }
 
 .cta {
@@ -101,7 +112,7 @@ h6 {
   flex-direction: column;
   gap: 30px;
   color: #42532a;
-  flex-grow: 1; /* Makes form fill the remaining space */
+  flex-grow: 1;
 }
 
 form {
