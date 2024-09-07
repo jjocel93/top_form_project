@@ -25,9 +25,10 @@
           <form
             action="http://127.0.0.1:5500/top/sign-up/index.html"
             method="post"
+            id="pineapple-form"
           >
-            <div class="inputs">
-              <div class="first-name">
+            <div class="left-inputs">
+              <div class="input">
                 <label for="first-name">First Name</label> <br />
                 <input
                   type="text"
@@ -38,18 +39,7 @@
                 />
               </div>
 
-              <div class="last-name">
-                <label for="last-name">Last name</label> <br />
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Squarepants"
-                  required
-                />
-              </div>
-
-              <div class="email">
+              <div class="input">
                 <label for="email">Email Address</label> <br />
                 <input
                   type="email"
@@ -60,7 +50,30 @@
                 />
               </div>
 
-              <div class="phone-number">
+              <div class="input">
+                <label for="password-1"> Password</label> <br />
+                <input
+                  type="password"
+                  name="password-1"
+                  id="password-1"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="left-inputs">
+              <div class="input">
+                <label for="last-name">Last name</label> <br />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Squarepants"
+                  required
+                />
+              </div>
+
+              <div class="input">
                 <label for="phone-number">Phone Number</label> <br />
                 <input
                   type="tel"
@@ -72,17 +85,7 @@
                 />
               </div>
 
-              <div class="password-1">
-                <label for="password-1"> Password</label> <br />
-                <input
-                  type="password"
-                  name="password-1"
-                  id="password-1"
-                  required
-                />
-              </div>
-
-              <div class="password-confirm">
+              <div class="input">
                 <label for="password-confirm">Confirm Password</label> <br />
                 <input
                   type="password"
@@ -92,14 +95,14 @@
                 />
               </div>
             </div>
-            <footer>
-              <input type="submit" value="Create Account" />
-              <p>
-                Already have an account?
-                <a class="login-link" href="https://www.google.com/">Log In</a>
-              </p>
-            </footer>
           </form>
+        </div>
+        <div class="footer">
+          <button type="submit" form="pineapple-form">Create Account</button>
+          <p>
+            Already have an account?
+            <a class="login-link" href="https://www.google.com/">Log In</a>
+          </p>
         </div>
       </div>
     </div>
