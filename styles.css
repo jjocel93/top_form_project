@@ -1,7 +1,4 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
+/* Reset */
 *,
 *::before,
 *::after {
@@ -56,13 +53,24 @@ h6 {
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
+.logo-container {
+  background-color: rgba(226, 228, 227, 0.816);
+  opacity: 0.85;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #42532a;
+  font-weight: bold;
+  position: relative;
+  top: 10%;
+}
+
 .main-container {
   display: flex;
   justify-content: space-between;
   background-color: #e1c28e;
   min-height: 100vh;
   height: 100%;
-  margin: 0 40px 0 40px;
+  margin: 0 40px;
 }
 
 .left-side {
@@ -77,10 +85,11 @@ h6 {
   width: 65%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1; /* Ensures it fills the available height */
 }
 
 .cta {
-  padding: 60px 40px;
+  padding: 50px 40px;
   font-size: 1.3rem;
   color: #42532a;
 }
@@ -92,30 +101,43 @@ h6 {
   flex-direction: column;
   gap: 30px;
   color: #42532a;
+  flex-grow: 1; /* Makes form fill the remaining space */
 }
 
 form {
   display: flex;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-h2 {
-  padding-left: 40px;
+input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: #42532a;
 }
 
 .footer {
-  padding: 30px 0 0 20px;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  padding: 40px 0 20px 20px;
+  font-size: 1.2rem;
   color: #42532a;
-  gap: 20px;
 }
 
 button {
   border-radius: 10px;
   color: #42532a;
   background-color: #e2e4e3;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #d4d6d5;
 }
