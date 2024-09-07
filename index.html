@@ -14,12 +14,16 @@
       <div class="right-side">
         <div class="cta">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-            magnam, vitae aut itaque culpa cupiditate, incidunt debitis
-            reiciendis placeat facilis labore a. Provident incidunt facilis aut
-            et amet placeat ipsam.
+            Join the Pineapple Club today and unlock a world of exclusive perks!
+            Whether you're a fan of tropical flavors or just love unique
+            experiences, our members enjoy early access to new products, special
+            discounts, and insider events. Plus, you'll be part of a vibrant
+            community that celebrates all things pineapple. Don’t miss out on
+            the sweet benefits—sign up now and bring a little sunshine into your
+            life!
           </p>
         </div>
+
         <div class="form">
           <h2>Hop on the Pineapple Express!</h2>
           <form
@@ -27,9 +31,9 @@
             method="post"
             id="pineapple-form"
           >
-            <div class="left-inputs">
+            <div class="form-row">
               <div class="input">
-                <label for="first-name">First Name</label> <br />
+                <label for="first-name">First Name</label><br />
                 <input
                   type="text"
                   name="first-name"
@@ -40,7 +44,20 @@
               </div>
 
               <div class="input">
-                <label for="email">Email Address</label> <br />
+                <label for="last-name">Last Name</label><br />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Squarepants"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input">
+                <label for="email">Email Address</label><br />
                 <input
                   type="email"
                   name="email"
@@ -51,30 +68,7 @@
               </div>
 
               <div class="input">
-                <label for="password-1"> Password</label> <br />
-                <input
-                  type="password"
-                  name="password-1"
-                  id="password-1"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="left-inputs">
-              <div class="input">
-                <label for="last-name">Last name</label> <br />
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Squarepants"
-                  required
-                />
-              </div>
-
-              <div class="input">
-                <label for="phone-number">Phone Number</label> <br />
+                <label for="phone-number">Phone Number</label><br />
                 <input
                   type="tel"
                   name="phone-number"
@@ -84,9 +78,21 @@
                   required
                 />
               </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input">
+                <label for="password-1">Password</label><br />
+                <input
+                  type="password"
+                  name="password-1"
+                  id="password-1"
+                  required
+                />
+              </div>
 
               <div class="input">
-                <label for="password-confirm">Confirm Password</label> <br />
+                <label for="password-confirm">Confirm Password</label><br />
                 <input
                   type="password"
                   name="password-confirm"
@@ -97,6 +103,7 @@
             </div>
           </form>
         </div>
+
         <div class="footer">
           <button type="submit" form="pineapple-form">Create Account</button>
           <p>
